@@ -14,7 +14,7 @@ public class Fragment7 extends PreferenceFragment {
     SharedPreferences.OnSharedPreferenceChangeListener listener;
     SharedPreferences sf;
     ListPreference lp0, lp1, lp2, lp3, lp4, lp5, lp6, lp7;
-    CheckBoxPreference cb0, cb1;
+    CheckBoxPreference cb0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,9 +50,6 @@ public class Fragment7 extends PreferenceFragment {
                         lp4 = (ListPreference) findPreference("pressure");
                         lp4.setSummary(sharedPreferences.getString("pressure", ""));
                         break;
-                    case "theme":
-                        lp5 = (ListPreference) findPreference("theme");
-                        lp5.setSummary(sharedPreferences.getString("theme", "Light"));
                     case "dateFormat":
                         lp6 = (ListPreference) findPreference("dateFormat");
                         lp6.setSummary(sharedPreferences.getString("dateFormat", ""));

@@ -67,18 +67,13 @@ public class MainActivity extends AppCompatActivity implements MenuItem.OnMenuIt
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.main_screen);
         context = this.getBaseContext();
         sf = PreferenceManager.getDefaultSharedPreferences(context);
-        if (sf.getString("theme", "Light").contentEquals("Light")) {
-            setTheme(R.style.l);
-        } else {
-            setTheme(R.style.d);
-        }
-        setContentView(R.layout.main_screen);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         drawer = (DrawerLayout) findViewById(R.id.drawer);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+        toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
@@ -181,7 +176,6 @@ public class MainActivity extends AppCompatActivity implements MenuItem.OnMenuIt
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
         getMenuInflater().inflate(R.menu.main_menu, menu);
-
         return true;
     }
 
@@ -192,7 +186,7 @@ public class MainActivity extends AppCompatActivity implements MenuItem.OnMenuIt
         }
         if (item.getItemId() == R.id.addCity) {
             if (ll.getChildCount() < 5) {
-                MyDialog myDailog = new MyDialog(this);
+                MyDialog myDailog = new MyDialog(this,R.style.search_style);
                 myDailog.setTitle("Add Location Manually");
                 et = new EditText(this);
                 et.setHint("city");
@@ -378,6 +372,10 @@ public class MainActivity extends AppCompatActivity implements MenuItem.OnMenuIt
 
         protected MyDialog(Context context) {
             super(context);
+        }
+
+        public MyDialog(MainActivity mainActivity, int d) {
+            super(mainActivity, d);
         }
     }
 

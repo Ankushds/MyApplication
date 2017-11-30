@@ -46,14 +46,6 @@
 
     <PreferenceCategory android:title="DISPLAY SETTINGS">
         <ListPreference
-            android:key="theme"
-            android:dialogTitle="Theme"
-            android:defaultValue="Light"
-            android:entries="@array/themeEntries"
-            android:entryValues="@array/themeEntries"
-            android:negativeButtonText="Cancel"
-            android:title="Theme" />
-        <ListPreference
             android:key="dateFormat"
             android:defaultValue="MMM dd yyyy E"
             android:dialogTitle="Date Format"

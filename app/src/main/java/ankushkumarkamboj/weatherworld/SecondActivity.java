@@ -32,14 +32,9 @@ public class SecondActivity extends AppCompatActivity implements MenuItem.OnMenu
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.second_screen);
         context = this.getBaseContext();
         sf = PreferenceManager.getDefaultSharedPreferences(this);
-        if (sf.getString("theme", "Light").contentEquals("Light")) {
-            setTheme(R.style.l);
-        } else {
-            setTheme(R.style.d);
-        }
-        setContentView(R.layout.second_screen);
         frameLayout = (FrameLayout) findViewById(R.id.fLayout);
         getFragmentManager().beginTransaction().add(R.id.fLayout, new Fragment7()).commit();
         toolbar =(Toolbar) findViewById(R.id.stoolbar);

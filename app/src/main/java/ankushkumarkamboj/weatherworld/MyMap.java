@@ -45,27 +45,19 @@ public class MyMap extends AppCompatActivity implements OnMapReadyCallback, Menu
     Menu menu;
     SharedPreferences sf;
     ActionBarDrawerToggle toggle;
-    LocationManager lm;
     Toolbar toolbar;
     Geocoder geocoder;
     LatLng latLng;
-    android.support.v7.app.ActionBar actionBar;
     FrameLayout frameLayout;
-    int k;
     Context context;
     MenuItem menuItem;
 
     @Override
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
+        setContentView(R.layout.my_map_drawer);
         context = this.getBaseContext();
         sf = PreferenceManager.getDefaultSharedPreferences(this);
-        if (sf.getString("theme", "Light").contentEquals("Light")) {
-            setTheme(R.style.l);
-        } else {
-            setTheme(R.style.d);
-        }
-        setContentView(R.layout.my_map_drawer);
         toolbar = (Toolbar) findViewById(R.id.maptoolbar);
         setSupportActionBar(toolbar);
         AdView mAdView = (AdView) findViewById(R.id.adView);
@@ -204,6 +196,7 @@ public class MyMap extends AppCompatActivity implements OnMapReadyCallback, Menu
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        super.onOptionsItemSelected(item);
         if (toggle.onOptionsItemSelected(item)) {
             return true;
         }
@@ -224,7 +217,6 @@ public class MyMap extends AppCompatActivity implements OnMapReadyCallback, Menu
                 gMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
                 break;
             default:
-                super.onOptionsItemSelected(item);
         }
         return true;
 
@@ -253,9 +245,11 @@ public class MyMap extends AppCompatActivity implements OnMapReadyCallback, Menu
                         startActivity(new Intent(context, SecondActivity.class));
                         break;
                     case R.id.mMap:
-                        startActivity(new Intent(context, MyMap.class));
+                        //startActivity(new Intent(context, MyMap.class));
+
                         break;
                 }
+                drawerLayout.closeDrawer(GravityCompat.START);
             }
         };
         countDownTimer.start();

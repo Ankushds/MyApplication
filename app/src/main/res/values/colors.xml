@@ -6,5 +6,6 @@
     <color name="common_plus_signin_btn_text_light_disabled">#ff000000</color>
     <color name="transparenT">#00000000</color>
     <color name="navigation_background">#ffffff</color>
-    navigation_background
+    <color name="pop_up">#AA68CC</color>
+
 </resources>

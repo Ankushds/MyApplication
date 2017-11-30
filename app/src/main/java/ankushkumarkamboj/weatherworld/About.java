@@ -36,14 +36,9 @@ public class About extends AppCompatActivity implements MenuItem.OnMenuItemClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.about);
         context = this.getBaseContext();
         sf = PreferenceManager.getDefaultSharedPreferences(this);
-        if (sf.getString("theme", "Light").contentEquals("Light")) {
-            setTheme(R.style.l);
-        } else {
-            setTheme(R.style.d);
-        }
-        setContentView(R.layout.about);
         toolbar = (Toolbar) findViewById(R.id.atoolbar);
         setSupportActionBar(toolbar);
         getSupportFragmentManager().beginTransaction().replace(R.id.afLayout, new Fragment4()).commit();
