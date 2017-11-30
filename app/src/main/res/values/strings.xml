@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WeatherWorld</string>
+    <string name="current_time">CurrentTime</string>
+    <string name="last_update">LastUpdate:</string>
+    <string name="image">image</string>
+    <string name="location">Location:</string>
+    <string name="gps">gps</string>
+    <string name="max_min">Max/Min</string>
+    <string name="temprature">Temperature</string>
+    <string name="dew_point">Dew Point:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="precipintensity">PrecipIntensity:</string>
+    <string name="precipprobability">PrecipProbability:</string>
+    <string name="visibility">Visibility:</string>
+    <string name="wind">wind</string>
+    <string name="pressure">Pressure:</string>
+    <string name="windmeasure">Wind:</string>
+    <string name="drawer_open">DrawerOpened</string>
+    <string name="drawer_close">DrawerClosed</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="dark_sky">WeatherA is an weather forcasting android application Powered by DarkSky.</string>
+    <string name="gmailId">ankushkambojds@gmail.com</string>
+    <string name="navigation_drawer_open">Open Drawer</string>
+    <string name="navigation_drawer_close">Close Drawer</string>
+</resources>

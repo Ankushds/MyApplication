@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="wrap_content"
+    android:theme="@style/lightStyle">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/precip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temperature1"
+                android:layout_marginTop="5dp"
+                android:text="Precip:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/temperature1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/summary1"
+                android:layout_marginTop="5dp"
+                android:text="Temprature"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/wind1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pressure1"
+                android:layout_marginTop="5dp"
+                android:text="WindSpeed:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/pressure1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/visibility1"
+                android:layout_marginTop="5dp"
+                android:text="Pressure"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/visibility1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/humidity1"
+                android:layout_marginTop="5dp"
+                android:text="Visibility"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/humidity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/precip1"
+                android:layout_marginTop="5dp"
+                android:text="Humidity:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:id="@+id/updateTime1"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LastUpdate:"
+                android:maxWidth="150dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/summary1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hLocation"
+                android:layout_marginTop="5dp"
+                android:text="Summary:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/hLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="150dp"
+                android:layout_marginTop="5dp"
+                android:text="Location"
+                android:textSize="12sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/hSunImg"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

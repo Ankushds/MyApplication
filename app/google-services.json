@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "90874266347",
+    "firebase_url": "https://weatherworld-91ed8.firebaseio.com",
+    "project_id": "weatherworld-91ed8",
+    "storage_bucket": "weatherworld-91ed8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90874266347:android:957d807a12ec535c",
+        "android_client_info": {
+          "package_name": "ankushkumarkamboj.weatherworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90874266347-q94iekh6oabsls8qh8mrakvehjoo8opt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ankushkumarkamboj.weatherworld",
+            "certificate_hash": "710fad832e6885d21505d0819cc5947fb6df6e94"
+          }
+        },
+        {
+          "client_id": "90874266347-vf3nb4inleeet9hhepves4u76o9h0kiv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsAZVD37CdZB5_PzhLl5HC41Lw2xBDN-I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90874266347-vf3nb4inleeet9hhepves4u76o9h0kiv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

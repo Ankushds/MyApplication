@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#d71859</color>
+    <color name="common_plus_signin_btn_text_light_disabled">#ff000000</color>
+    <color name="transparenT">#00000000</color>
+    <color name="navigation_background">#ffffff</color>
+    navigation_background
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:theme="@style/lightStyle"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="#b579d2"
+        android:id="@+id/imageView2"
+        android:layout_height="220dp"
+        android:src="@android:drawable/btn_star_big_on" />
+
+</RelativeLayout>

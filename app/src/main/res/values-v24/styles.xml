@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="d" parent="Theme.AppCompat">
+        <item name="android:textColor">#ffff8800</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:statusBarColor">#212121</item>
+        <item name="android:windowBackground">@drawable/dbb</item>
+    </style>
+
+    <style name="l" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">#ffff8800</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:statusBarColor">#2F000000</item>
+        <item name="android:windowBackground">@drawable/lbb</item>
+    </style>
+
+    <style name="lightStyle" parent="Theme.AppCompat">
+        <item name="android:textColor">#ffff8800</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CMOptionsMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">#212129</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/cardview_dark_background</item>
+    </style>
+
+    <style name="firstScreenD" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:statusBarColor">@color/cardview_dark_background</item>
+        <item name="android:windowBackground">@color/cardview_dark_background</item>
+    </style>
+
+    <style name="WeatherWorld">
+        <item name="android:text">WeatherWorld</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Large</item>
+    </style>
+
+    <style name="prefrence">
+        <item name="android:background">#ffff8800</item>
+    </style>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="UNITS">
+        <ListPreference
+            android:key="temp"
+            android:defaultValue="F"
+            android:dialogTitle="Temperature Unit"
+            android:entries="@array/tempEntries"
+            android:entryValues="@array/tempEntries"
+            android:negativeButtonText="Cancel"
+            android:title="TemperatureUnit" />
+        <ListPreference
+            android:key="windSpeed"
+            android:defaultValue="km/h"
+            android:dialogTitle="Wind Speed Unit"
+            android:entries="@array/windEntries"
+            android:entryValues="@array/windEntries"
+            android:negativeButtonText="Cancel"
+            android:title="Wind Speed Unit" />
+        <ListPreference
+            android:key="precipUnit"
+            android:defaultValue="mm"
+            android:dialogTitle="Precipitation Unit"
+            android:entries="@array/precipitationEntries"
+            android:entryValues="@array/precipitationEntries"
+            android:negativeButtonText="Cancel"
+            android:title="Precipitation Unit" />
+        <ListPreference
+            android:key="visibility"
+            android:defaultValue="km"
+            android:dialogTitle="Visibility Unit"
+            android:entries="@array/visibilityEntries"
+            android:entryValues="@array/visibilityEntries"
+            android:negativeButtonText="Cancel"
+            android:title="Visibility Unit" />
+        <ListPreference
+            android:key="pressure"
+            android:defaultValue="hpa"
+            android:title="Pressure Unit"
+            android:dialogTitle="Pressure Unit"
+            android:entries="@array/pressureEntries"
+            android:entryValues="@array/pressureEntries"
+            android:negativeButtonText="Cancel" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="DISPLAY SETTINGS">
+        <ListPreference
+            android:key="theme"
+            android:dialogTitle="Theme"
+            android:defaultValue="Light"
+            android:entries="@array/themeEntries"
+            android:entryValues="@array/themeEntries"
+            android:negativeButtonText="Cancel"
+            android:title="Theme" />
+        <ListPreference
+            android:key="dateFormat"
+            android:defaultValue="MMM dd yyyy E"
+            android:dialogTitle="Date Format"
+            android:entries="@array/dateEntries"
+            android:entryValues="@array/dateEntries"
+            android:negativeButtonText="Cancel"
+            android:title="Date Format" />
+        <CheckBoxPreference
+            android:key="timeFormat"
+            android:defaultValue="false"
+            android:summary="Enable 12 hour time format"
+            android:title="Use 12-hours format" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="ABOUT">
+        <Preference
+            android:key="about"
+            android:summary="Version:1.0"
+            android:title="About" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/satView"
+            android:title="SateliteMode"
+            android:icon="@drawable/navmap"/>
+        <item
+            android:id="@+id/simpleMap"
+            android:title="SimpleMap"
+            android:icon="@drawable/navmap"/>
+        <item
+            android:id="@+id/traffic"
+            android:title="TrafficMode"
+            android:icon="@drawable/navmap"/>
+        <item
+            android:id="@+id/terrain"
+            android:title="TerrainMode"
+            android:icon="@drawable/navmap"/>
+        <item
+            android:id="@+id/hybrid"
+            android:title="HybridMode"
+            android:icon="@drawable/navmap"/>
+
+    </group>
+
+</menu>

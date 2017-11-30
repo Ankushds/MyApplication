@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_daily0"
+    android:theme="@style/lightStyle"
+    android:layout_width="match_parent"
+    android:layout_height="214dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="5dp"
+        android:elevation="2dp"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/container_daily1"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/dSummary"
+                android:layout_marginTop="5dp"
+                android:text="Temerature:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sunrise"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/temperature"
+                android:layout_alignStart="@+id/temperature"
+                android:layout_below="@+id/temperature"
+                android:layout_marginTop="5dp"
+                android:text="SunRise:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/lastUpdate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LastUpdate:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/dSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastUpdate2"
+                android:gravity="start"
+                android:text="Summary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/speedWind"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/sunset"
+                android:layout_marginTop="5dp"
+                android:gravity="start"
+                android:text="WindSpeed"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sunset"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignEnd="@+id/sunrise"
+                android:layout_below="@+id/sunrise"
+                android:layout_marginTop="5dp"
+                android:text="SunSet:"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/dCloudImage"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/dLocation"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/dCloudImage"
+                android:layout_marginStart="13dp"
+                android:gravity="center"
+                android:text="Day"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/dLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/lastUpdate2"
+                android:text="MyLocation"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

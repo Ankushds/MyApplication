@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="tempEntries">
+        <item>C</item>
+        <item>F</item>
+    </array>
+    <array name="windEntries">
+        <item>mph</item>
+        <item>km/h</item>
+        <item>m/s</item>
+    </array>
+    <array name="pressureEntries">
+        <item>hpa</item>
+        <item>kgf/m2</item>
+    </array>
+    <array name="precipitationEntries">
+        <item>mm</item>
+        <item>in</item>
+    </array>
+    <array name="visibilityEntries">
+        <item>mi</item>
+        <item>km</item>
+    </array>
+    <array name="themeEntries">
+        <item>Light</item>
+        <item>Dark</item>
+    </array>
+
+    <style name="HoloLight" parent="AlertDialog.AppCompat.Light" />
+
+    <style name="Dark" parent="Theme.AppCompat.DayNight.DarkActionBar" />
+
+    <style name="Light" parent="Base.Theme.AppCompat.Light.Dialog.FixedSize" />
+
+    <style name="DarkGray" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <array name="dateEntries">
+        <item>MMM dd yyyy E</item>
+        <item>E MMM dd yyyy</item>
+        <item>E dd MMM yyyy</item>
+        <item>E yyyy MMM dd</item>
+        <item>E yyyy dd MMM</item>
+        <item>dd MMM yyyy</item>
+        <item>MMM dd yyyy</item>
+        <item>yyyy dd MMM</item>
+        <item>dd yyyy MMM</item>
+    </array>
+
+</resources>
